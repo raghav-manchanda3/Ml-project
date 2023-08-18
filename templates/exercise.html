@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<meta charset="UTF-8">
+	<title>AI-TRAINER</title>
+	<!-- =================== META =================== -->
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="shortcut icon" href="static/img/favicon.png">
+	<!-- =================== STYLE =================== -->
+	<link rel="stylesheet" href="{{ url_for('static',filename='css/bootstrap-grid.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static',filename='css/font-awesome.min.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+</head>
+
+<body id="home">
+	<!--================ PRELOADER ================-->
+	<div class="preloader-cover">
+		<div id="cube-loader">
+			<div class="caption">
+				<div class="cube-loader">
+					<div class="cube loader-1"></div>
+					<div class="cube loader-2"></div>
+					<div class="cube loader-4"></div>
+					<div class="cube loader-3"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--============== PRELOADER END ==============-->
+	
+	<!-- ================= HEADER ================= -->
+	<header class="header">
+		<a href="#" class="nav-btn">
+			<span></span>
+			<span></span>
+			<span></span>
+		</a>
+		
+		<div class="top-panel">
+			<div class="container">
+				<nav class="nav-menu">
+					<ul class="nav-list">
+						<li><a href="index">HOME</a></li>
+					</ul>
+				</nav>
+				<div class="header-right">
+					
+					<ul class="social-list">
+						<li><a target="_blank" href="https://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a target="_blank" href="https://twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li><a target="_blank" href="https://www.youtube.com/"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+						<li><a target="_blank" href="https://www.instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<div class="header-menu">
+			<div class="container">
+				
+			</div>
+		</div>
+	</header>
+	<!-- =============== HEADER END =============== -->
+
+	<!-- =============== HEADER-TITLE =============== -->
+	<section class="s-header-title" style="background-image: url(static/img/bg-1-min.png);">
+		<div class="container">
+			<h1 class="title">Let's Exercise</h1>
+			<ul class="breadcrambs">
+				<li><a href="index">Home</a></li>
+				<li>EXERCISE</li>
+			</ul>
+		</div>
+	</section>
+	<!-- ============= HEADER-TITLE END ============= -->
+
+	<!--===================== S-NEWS =====================-->
+	<center>
+	<section class="s-news">
+		<!--<div class="container">-->
+			<!--<div class="row">-->
+				<div class="'">
+					<div class="post-item-cover">
+						<div class="post-header">
+							<div class="post-thumbnail">
+								
+									<iframe width="888" height="500" src= '{{ embedid_video }}'  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									<!--<img src="static/img/blog-1.jpg" alt="img">-->
+								
+							</div>
+						</div>
+						<div class="post-content">
+				
+							<h2 class="title">{{ exercisetype }}</h2>
+							
+						</div>
+						<div class="post-footer">
+				
+		
+						</div>
+					</div>
+					<div class="post-item-cover">
+						<div class="post-header">
+							<center>
+							<div class="">
+								
+									<img class="livecam" src= '{{ exercisetype }}'  alt="img" height="600" width="800" >
+								
+							</div>
+							</center>
+						</div>
+						<div class="post-content">
+
+							<h2 class="title">The Count of Reps(repetition) of your exercise is shown in <em> blue at the top left corner</em></h2>
+				
+						</div>
+
+					</div>
+	
+				</div>
+
+				<!--================= SIDEBAR =================-->
+			
+
+		<!--</div>-->
+	</section>
+</center>
+	<!--=================== S-NEWS END ===================-->
+
+	<!-- ================== FOOTER ================== -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 col-lg-3 footer-item-logo">
+					<a href="index" class="logo-footer"><img src="static/img/footer-logo2.svg" alt="logo"></a>
+					<p>stay connected with us</p>
+					<ul class="social-list">
+						<li><a target="_blank" href="https://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a target="_blank" href="https://twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li><a target="_blank" href="https://www.youtube.com/"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+						<li><a target="_blank" href="https://www.instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+					</ul>
+				</div>
+				<div class="col-sm-6 col-lg-3 footer-item footer-item-list">
+					<h3>Other Exercises Links</h3>
+					<ul class="footer-link">
+
+						<li><a href="tricep">1) Tricep-pushdown</a></li>
+						<li><a href="pushup">2) Pushups</a></li>
+						<li><a href="pullup">3) Pullups</a></li>
+						<li><a href="bicep_curls">4) Bicep-curls</a></li>
+                        <li><a href="squats">5) Squats</a></li>
+						<li><a href="jumping_jack">6) Jumping-Jacks</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-6 col-lg-3 footer-item">
+					<h3>Contact us</h3>
+					<ul class="footer-cont">
+						<li><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:18004886000">1-800-488-6099</a></li>
+						<li><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:aiFt@gmail.com">aiFit@gmail.com</a></li>
+						<li><i class="fa fa-map-marker" aria-hidden="true"></i> India,state,21</li>
+					</ul>
+				</div>
+
+			</div>
+			<div class="footer-bottom">
+				<div class="copyright"><a href="#" target="_blank"></a></div>
+				<ul class="footer-menu">
+					<li><a href="index">Home</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+	<!-- ================ FOOTER END ================ -->
+
+	<!--=================== TO TOP ===================-->
+	<a class="to-top" href="#home">
+		<i class="fa fa-chevron-up" aria-hidden="true"></i>
+	</a>
+	<!--================= TO TOP END =================-->
+
+	<!--=================== SCRIPT	===================-->
+	<script src="{{ url_for('static',filename='js/jquery-2.2.4.min.js') }}"></script>
+	<script src="{{ url_for('static',filename='js/scripts.js') }}"></script>
+</body>
+
+</html>
